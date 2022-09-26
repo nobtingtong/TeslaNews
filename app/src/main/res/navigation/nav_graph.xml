@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_graph_news">
+
+    <!--     dynamic feature module-->
+    <include-dynamic
+        android:id="@+id/nav_graph_news"
+        android:name="com.scg.news"
+        app:graphResName="nav_graph_news"
+        app:moduleName="news">
+
+        <argument
+            android:name="count"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </include-dynamic>
+
+    <include-dynamic
+        android:id="@+id/nav_graph_detail"
+        android:name="com.scg.detail"
+        app:graphResName="nav_graph_detail"
+        app:moduleName="detail">
+
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="detail"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <argument
+            android:name="dateTime"
+            app:argType="string" />
+
+    </include-dynamic>
+
+</navigation>

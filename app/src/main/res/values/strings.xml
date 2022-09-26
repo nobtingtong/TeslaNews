@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project Boilerplate Code</string>
+    <string name="title_dynamicfeature">Dynamic Feature</string>
+    <string name="title_feature">Feature</string>
+    <string name="title_photos">Photos</string>
+    <string name="title_news">News</string>
+    <string name="title_detail">Detail</string>
+</resources>
